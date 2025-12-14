@@ -51,3 +51,15 @@ packages:
       - audit
       - uidmap
       - fuse-overlayfs
+
+packages_cleanup:
+  enabled: false
+  ubuntu:
+    purge: true
+    list:
+      - snapd
+      - resolvconf
+      - popularity-contest
+      - apport
+      - whoopsie
+      - modemmanager
