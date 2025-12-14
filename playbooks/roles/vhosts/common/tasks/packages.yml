@@ -15,6 +15,15 @@
     - normalized_base_dependencies | length > 0
   become: true
 
+# 确保仓库缓存更新后再安装主包
+- name: Refresh apt cache before package install
+  ansible.builtin.apt:
+    update_cache: true
+  when:
+    - package_manager == 'apt'
+    - normalized_package_list | length > 0
+  become: true
+
 # 实际安装
 - name: Install packages via apt
   ansible.builtin.apt:
