@@ -1,3 +1,0 @@
-username: "{{ user }}"
-ssh_public_keys: "{{ ssh_keys }}"
-enable_gpu: "{{ gpu_enabled | default(false) }}"

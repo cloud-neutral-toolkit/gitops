@@ -1,7 +1,0 @@
----
-- name: Apply branch protection rules
-  hosts: localhost
-  connection: local
-  gather_facts: false
-  roles:
-    - github

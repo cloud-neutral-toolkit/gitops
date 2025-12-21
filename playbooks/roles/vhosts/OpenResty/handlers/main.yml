@@ -1,4 +1,0 @@
-- name: Restart OpenResty
-  systemd:
-    name: openresty
-    state: restarted

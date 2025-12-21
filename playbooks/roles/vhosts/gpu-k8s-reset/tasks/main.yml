@@ -1,3 +1,0 @@
-- name: Reset GPU Kubernetes cluster
-  script: files/reset-gpu-k8s.sh
-  when: cluster_reset | default('enable') == 'enable'

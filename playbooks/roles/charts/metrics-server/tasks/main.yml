@@ -1,3 +1,0 @@
-- name: Install metrics server
-  script: files/setup.sh {{ inventory_hostname }}
-  when: is_primary | bool

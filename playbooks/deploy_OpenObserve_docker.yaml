@@ -1,5 +1,0 @@
-- name: setup OpenObserve
-  hosts: all
-  become: true
-  roles:
-    - docker/OpenObserve/
